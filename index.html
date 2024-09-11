@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compute Compound Interest</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Compute Compound Interest</h1>
+    </header>
+
+    <main role="main">
+      <form class="form" aria-labelledby="formTitle">
+        <h2 id="formTitle">Compound Interest Calculator</h2>
+
+        <fieldset class="principal-container">
+          <legend>Principal</legend>
+          <label for="principal">Principal Amount:</label>
+          <input id="principal" type="number" aria-required="true" />
+        </fieldset>
+
+        <fieldset class="interest-container">
+          <legend>Interest Rate</legend>
+          <label for="interestVolume">Interest Rate Slider:</label>
+          <input
+            type="range"
+            id="interestVolume"
+            class="slider"
+            min="0"
+            max="100"
+            value="50"
+            step="5"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-labelledby="interestSliderVal"
+          />
+          <p>
+            Current Value:
+            <span class="interest-value" id="interestSliderVal">50</span>%
+          </p>
+        </fieldset>
+
+        <fieldset class="compound-container">
+          <legend>Number of Times Compounded Per Year</legend>
+          <label for="timesCompounded">Compounding Frequency:</label>
+          <input id="timesCompounded" type="number" aria-required="true" />
+        </fieldset>
+
+        <fieldset class="total-years-container">
+          <legend>Total Number of Years</legend>
+          <label for="totalYears">Investment Duration:</label>
+          <input id="totalYears" type="number" aria-required="true" />
+        </fieldset>
+      </form>
+
+      <div class="output-container">
+        <div>Your compound interest is:</div>
+        <output id="compound">0</output>
+      </div>
+
+      <div class="piggy-container">
+        <img src="img/piggie.png" alt="Piggie Bank" class="piggie-image" />
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <a
+        href="https://codesandbox.io/p/sandbox/6x49df?file=%2Fstyles.css%3A122%2C2"
+        class="footer-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Source Code!</a
+      >
+    </footer>
+  </body>
+</html>

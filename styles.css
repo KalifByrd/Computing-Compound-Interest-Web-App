@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+/* Basic page setup */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px auto 50px; /* Layout for header, main content, and footer */
+  font-size: 16px; /* Base font size for consistency */
+  line-height: 1.5; /* Improve text readability */
+}
+
+/* Header styling */
+header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+/* Heading styling */
+h1 {
+  background-color: rgb(53, 62, 146); /* Background color for header */
+  color: white;
+  font-size: 1.3rem; /* Font size with rem units for scalability */
+  font-family: "Dela Gothic One", sans-serif; /* Font style for heading */
+  font-weight: normal;
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  border: 9px double rgba(0, 0, 0, 0.425); /* Double border for emphasis */
+  text-shadow: 2px 2px 2px black; /* Shadow for better text visibility */
+}
+
+/* Main content layout */
+main {
+  background-image: linear-gradient(
+    180deg,
+    rgb(102, 97, 255),
+    rgb(156, 207, 255),
+    white
+  ); /* Gradient background for main content */
+  display: flex;
+  flex-direction: column; /* Stack form and output vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  gap: 20px; /* Space between form and output */
+  padding: 20px;
+  height: 100%; /* Full height for main content */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+/* Form container styling */
+.form {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.652
+  ); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Maximum width for larger screens */
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center; /* Center form elements horizontally */
+  gap: 10px; /* Space between form elements */
+  transform: scale(1); /* Initial scale */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Form hover effect */
+.form:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Input and slider styling */
+input[type="number"],
+.slider {
+  width: 100%; /* Full width for inputs */
+  padding: 8px;
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border color */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Input and slider focus effect */
+input[type="number"]:focus,
+.slider:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+/* Legend styling in fieldsets */
+fieldset legend {
+  color: darkblue; /* Dark blue text for legends */
+  font-weight: bold; /* Bold text for better readability */
+}
+
+/* Container styling for principal, interest, compound, and years sections */
+.principal-container,
+.interest-container,
+.compound-container,
+.total-years-container {
+  background-color: rgba(140, 168, 229, 0.368); /* Light background color */
+  border: 1px double rgba(31, 54, 228, 0.371); /* Double border */
+  padding: 10px; /* Padding inside the border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Output container styling */
+.output-container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.767
+  ); /* Slightly transparent background */
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Maximum width for larger screens */
+  transform: scale(1); /* Initial scale */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Output hover effect */
+.output-container:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Output text styling */
+output {
+  font-size: 2em; /* Larger font size for emphasis */
+  color: #333; /* Dark text for readability */
+}
+
+/* Styling for piggy image */
+.piggy-container {
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Maximum width for larger screens */
+}
+
+.piggie-image {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer styling */
+footer {
+  background-color: rgb(31, 35, 85); /* Footer background color */
+  display: flex;
+  justify-content: center; /* Center footer content */
+  align-items: center;
+  padding: 10px;
+}
+
+/* Footer button styling */
+.footer-button {
+  background-color: #ff69b4; /* Button background color */
+  color: white;
+  font-family: "Dela Gothic One", sans-serif; /* Font style for button */
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners */
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Footer button hover effect */
+.footer-button:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
