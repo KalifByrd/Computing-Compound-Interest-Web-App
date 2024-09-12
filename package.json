@@ -6,11 +6,7 @@
   "scripts": {
     "start": "serve"
   },
-  "keywords": [
-    "html",
-    "css",
-    "javascript"
-  ],
+  "keywords": ["html", "css", "javascript"],
   "author": "Kalif Byrd",
   "license": "MIT",
   "devDependencies": {
